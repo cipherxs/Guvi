@@ -1,0 +1,10 @@
+def print_number_pyramid():
+    num = 1
+    for i in range(1, 7):  # Assuming 5 rows for this example, adjust as needed
+        print(" " * (6 - i), end="")
+        for j in range(1, i + 1):
+            print(num, end=" ")
+            num += 1
+        print()
+
+print_number_pyramid()
